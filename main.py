@@ -29,7 +29,7 @@ def createVideo():
     bgCount = len(bgFiles)
     bgIndex = random.randint(0, bgCount-1)
     backgroundVideo = VideoFileClip(
-        filename=f"{bgDir}/{bgPrefix}{bgIndex}.mp4", 
+        filename=f"{bgDir}\\{bgPrefix}{bgIndex}.mp4", 
         audio=False).subclip(0, script.getDuration())
     w, h = backgroundVideo.size
 
